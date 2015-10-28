@@ -4,7 +4,8 @@
 	font-size: @font-size;
 
 	.selected:before {
-		background: #d0d0d0;
+		background: fade(#fff, 25%);
+		// background: #d0d0d0;
 	}
 }
 
@@ -22,7 +23,7 @@
 
 	&:focus {
 		.selected:before {
-			background: @background-color-selected;
+			background: fade(#fff, 50%);
 		}
 	}
 }
