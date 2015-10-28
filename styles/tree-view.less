@@ -2,7 +2,6 @@
 
 .tree-view {
 	font-size: @font-size;
-	// background: @tree-view-background-color;
 
 	.selected:before {
 		background: #d0d0d0;
@@ -10,24 +9,18 @@
 }
 
 .tree-view-resizer {
+
+	margin: 12px 12px 24px 12px;
+
 	.tree-view-resize-handle {
 		width: 8px;
 	}
 }
 
-// .tree-view-scroller {
-// 	box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.25);
-// }
-
 .focusable-panel {
 	opacity: 1;
-	// background-image: -webkit-gradient(linear, left top, left bottom, from(#e8ecf1), to(#ebebeb));
-	// background-image: -webkit-linear-gradient(top, #e8ecf1, #ebebeb);
 
 	&:focus {
-		// background-image: -webkit-gradient(linear, left top, left bottom, from(#e8ecf1),to(#d1d8e0));
-		// background-image: -webkit-linear-gradient(top, #e8ecf1, #d1d8e0);
-
 		.selected:before {
 			background: @background-color-selected;
 		}
