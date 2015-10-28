@@ -4,13 +4,32 @@
 	font-size: @font-size;
 
 	.selected:before {
+		left: 12px;
 		background: fade(#fff, 50%);
+	}
+
+	&.full-menu {
+		padding: 12px 0 12px 12px;
+	}
+
+	.list-item {
+		height: 24px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.directory:not(.status-ignored) {
+		.list-item {
+			&.header {
+				.name {
+					font-weight:bold;
+				}
+			}
+		}
 	}
 }
 
 .tree-view-resizer {
-	margin: 12px 3px 24px 12px;
-
 	.tree-view-resize-handle {
 		width: 8px;
 	}
@@ -18,10 +37,4 @@
 
 .focusable-panel {
 	opacity: 1;
-
-	// &:focus {
-	// 	.selected:before {
-	// 		background: fade(#fff, 50%);
-	// 	}
-	// }
 }
