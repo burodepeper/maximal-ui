@@ -5,18 +5,27 @@
 atom-pane-container {
   atom-pane {
     margin-right:18px;
+
+    .item-views {
+      .pane-item {
+        background: #fff;
+        box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &.active {
+      .item-views {
+        .pane-item {
+          box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
   }
 }
 
-atom-pane {
-  .pane-item {
-    background: #fff;
-    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  &.active {
-    .pane-item {
-      box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.25);
-    }
+.settings-view {
+  .config-menu {
+    background: transparent;
+    border: 0;
   }
 }

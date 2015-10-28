@@ -1,4 +1,4 @@
-
+# Files
 - [ ] styles/atom.less
 - [ ] styles/buttons.less
 - [ ] styles/editor.less
@@ -17,3 +17,6 @@
 - [ ] styles/ui-mixins.less
 - [ ] styles/ui-variables.less
 - [ ] styles/utilities.less
+
+# Features
+- [ ] padding-top and padding-bottom in editor
