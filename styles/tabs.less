@@ -25,7 +25,11 @@
     color: @text-color;
     padding: 0 9px;
     margin: 0 3px 0 0;
-    background: #f2f2f2;
+    background: fade(#fff, 50%);
+
+    &:first-child:not(.active) {
+      margin-left: 3px;
+    }
 
     .close-icon {
       right: 6px;
@@ -64,14 +68,17 @@
     top: @tab-top-padding - 6px;
     height: @tab-height + 6px;
     line-height: @tab-height + 6px;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
+
+    .pane.active & {
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.25);
+    }
 
     .close-icon {
       line-height: @tab-height - 1px;
       color: @text-color;
       top: 3px;
     }
-
-
   }
 
   .tab:hover {
