@@ -4,14 +4,12 @@
 	font-size: @font-size;
 
 	.selected:before {
-		background: fade(#fff, 25%);
-		// background: #d0d0d0;
+		background: fade(#fff, 50%);
 	}
 }
 
 .tree-view-resizer {
-
-	margin: 12px 12px 24px 12px;
+	margin: 12px 3px 24px 12px;
 
 	.tree-view-resize-handle {
 		width: 8px;
@@ -21,9 +19,9 @@
 .focusable-panel {
 	opacity: 1;
 
-	&:focus {
-		.selected:before {
-			background: fade(#fff, 50%);
-		}
-	}
+	// &:focus {
+	// 	.selected:before {
+	// 		background: fade(#fff, 50%);
+	// 	}
+	// }
 }

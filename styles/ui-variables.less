@@ -13,7 +13,7 @@
 @text-color:            lighten(@color-fg, 20%);
 @text-color-subtle:     lighten(@color-fg, 50%);
 @text-color-highlight:  @color-fg;
-@text-color-selected:   @color-bg;
+@text-color-selected:   @color-fg;
 
 @text-color-info:       @color-blue;
 @text-color-success:    @color-green;
@@ -21,10 +21,10 @@
 @text-color-error:      @color-red;
 
 @text-color-ignored:    @text-color-subtle;
-@text-color-added:      @color-green;
-@text-color-renamed:    @color-orange;
-@text-color-modified:   @color-orange;
-@text-color-removed:    @color-red;
+@text-color-added:      darken(@color-green, 10%);
+@text-color-renamed:    darken(@color-orange, 10%);
+@text-color-modified:   darken(@color-orange, 10%);
+@text-color-removed:    darken(@color-red, 10%);
 
 //
 
@@ -83,8 +83,8 @@
 
 // Sizes
 
-@font-size: 11px;
-@input-font-size: 14px;
+@font-size: 12px;
+@input-font-size: 12px;
 @disclosure-arrow-size: 12px;
 
 @component-padding: 10px;
