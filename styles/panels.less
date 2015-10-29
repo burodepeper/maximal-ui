@@ -70,3 +70,108 @@ atom-panel,
     }
   }
 }
+
+.package-detail {
+  .breadcrumb {
+    padding: 18px;
+  }
+}
+
+.section,
+.section:last-child,
+.settings-panel,
+{
+  padding: 18px 18px 15px 18px;
+}
+
+.settings-view {
+
+  .config-menu {
+    background: transparent;
+    border-right: 1px solid fade(@app-background-color, 50%);
+
+    .panels-menu {
+      li {
+        a {
+          &:hover {
+            background: fade(@app-background-color, 50%);
+          }
+        }
+        &.active {
+          a {
+            background: fade(@app-background-color, 50%);
+          }
+        }
+      }
+    }
+  }
+
+  .section,
+  .section:last-child,
+  // .sub-section,
+  .settings-panel,
+  .settings-view,
+  {
+    border-top: 3px solid @app-background-color;
+    padding: 18px 18px 15px 18px;
+
+    &:first-child {
+      border-top: 0;
+    }
+
+    .settings-container,
+    .package-container {}
+
+    .package-card {
+      padding: 18px;
+      margin-bottom: 18px;
+      border-radius: 0;
+      border: 0;
+      background: fade(@app-background-color, 50%);
+
+      &:hover {
+        background: fade(@app-background-color, 50%);
+      }
+
+      &.disabled {
+        background: fade(@app-background-color, 25%);
+      }
+    }
+
+    .package-detail-view {
+      .link {
+        margin: 0 0 6px 18px;
+        color: @color-link;
+      }
+
+      .text {
+        margin: 0 0 18px 18px;
+      }
+    }
+
+    .package-readme {
+      h1 {
+        margin: 36px 0 18px;
+      }
+
+      h2 {
+        margin: 36px 0 18px;
+      }
+
+      hr {
+        border-top: 3px solid fade(@app-background-color, 50%);
+        margin: 18px 0;
+      }
+
+      a {
+        color: @color-red;
+      }
+    }
+
+    .btn-wrap-group {
+      .btn {
+        margin: 0 6px 6px 0;
+      }
+    }
+  }
+}
