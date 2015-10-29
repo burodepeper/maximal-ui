@@ -2,15 +2,28 @@
 @import "ui-variables";
 @import "buttons";
 
+atom-panel-container {
+  &.bottom {
+    padding-left: 12px;
+  }
+}
+
 atom-panel,
 .tool-panel {
 
   .text(normal);
   position: relative;
-  background: transparent !important;
+  background: transparent;
 
   &.bottom {
     margin-right:18px;
+  }
+
+  &.top,
+  &.right,
+  &.bottom,
+  &.left {
+    background: transparent;
   }
 
   status-bar {
@@ -38,5 +51,22 @@ atom-panel,
     @selected: lighten(@button-background-color-selected, 10%);
     @text: lighten(@text-color, 10%);
     .btn-background(@bg, @hover, @selected, @button-border-color, @text, @text);
+  }
+}
+
+.find-and-replace,
+.project-find {
+  padding: 6px 0 0;
+
+  .header {
+    padding: 18px 0 6px;
+  }
+
+  .input-block-item {
+    padding: 0 9px 9px 0;
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }

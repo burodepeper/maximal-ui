@@ -3,9 +3,8 @@
 
 atom-text-editor[mini],
 atom-text-editor[mini]::shadow {
+
   color: lighten(@text-color, 15%);
-  // background-color: darken(@input-background-color, 1%);
-  // padding-left: @component-padding/2;
   padding-left: 9px;
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
 
@@ -18,6 +17,7 @@ atom-text-editor[mini]::shadow {
 
 atom-text-editor[mini].is-focused,
 atom-text-editor[mini].is-focused::shadow {
+
   color: @text-color;
   background-color: @input-background-color;
   border-color: @input-border-color;
@@ -50,9 +50,3 @@ atom-text-editor:not([mini]) {
   //   }
   // }
 }
-
-// atom-text-editor,
-// atom-text-editor::shadow {
-//   margin-right: 12px;
-//   box-shadow: 3px solid rgba(0, 0, 0, 0.25);
-// }

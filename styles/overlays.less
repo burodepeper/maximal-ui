@@ -1,12 +1,12 @@
 @import "ui-variables";
 
-atom-panel.modal, .overlay {
+atom-panel.modal,
+.overlay {
   color: @text-color;
-  background-color: @overlay-background-color;
+  background-color: @app-background-color;
   padding: @component-padding;
-  border: 1px solid @overlay-border-color;
-  box-shadow: 0 0 10px @base-border-color;
-  border-radius: @component-border-radius;
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.25);
+  // outline: 12px solid rgba(0, 0, 0, 0.25);
 
   atom-text-editor[mini] {
     margin-bottom: @component-padding;
