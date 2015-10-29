@@ -94,11 +94,13 @@
   }
 
   .placeholder {
-    height: @tab-height + @tab-top-padding;
-    margin-left: -9px; // center between tabs
+    width: 2px;
+    background: @color-fg;
+    height: @tab-height + 6px;
+    margin: @tab-top-padding - 6px 0 0 -1px;
     pointer-events: none;
     &:after {
-      top: @tab-height + @tab-top-padding - 2px;
+      display: none;
     }
   }
 }
