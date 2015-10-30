@@ -27,12 +27,38 @@ atom-panel,
   }
 
   status-bar {
-    height: 36px;
+    height: 42px;
 
     .flexbox-repaint-hack {
-      left: 12px;
-      top: 9px;
+      left: 6px;
+      top: 12px;
       padding: 0;
+      height: 24px;
+
+      .status-bar-left {
+        .inline-block {
+          margin-right: 12px;
+        }
+      }
+
+      .status-bar-right {
+        .inline-block {
+          margin-left: 12px;
+        }
+      }
+
+      .inline-block {
+        color: fade(@color-fg, 50%);
+        line-height: 24px;
+
+        .inline-block {
+          margin-left: 0;
+        }
+
+        &:hover {
+          color: @color-fg;
+        }
+      }
     }
   }
 }
