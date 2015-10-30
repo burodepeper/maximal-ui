@@ -1,4 +1,5 @@
-# Files
+# Files (clean-up manually)
+
 - [ ] styles/atom.less
 - [ ] styles/buttons.less
 - [ ] styles/editor.less
@@ -18,5 +19,11 @@
 - [ ] styles/ui-variables.less
 - [ ] styles/utilities.less
 
-# Features
-- [ ] padding-top and padding-bottom in editor
+# Update existing stuff
+
+- [ ] Settings
+  - [ ] TODO
+
+# Additional features
+
+- [ ] padding-top and padding-bottom (equal to an empty line) in `editor`

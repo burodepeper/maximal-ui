@@ -37,6 +37,7 @@
       text-align: right;
       line-height: @tab-height;
       color: fade(@text-color, 50%);
+      cursor: pointer;
 
       &:hover {
         color: inherit;
@@ -44,14 +45,22 @@
     }
 
     &.modified:not(:hover) .close-icon {
-      right: 0;
+      // right: 0;
+      right: 6px;
       top: @tab-height/2 - @modified-icon-width/2 + 1px;
       width: @modified-icon-width;
       height: @modified-icon-width;
+      border-color: @text-color;
     }
 
-    &.modified:hover .close-icon:hover {
-      color: @text-color-highlight;
+    &.modified:hover .close-icon {
+      color: @text-color;
+      border-color: @text-color;
+    }
+
+    &.modified .close-icon:hover {
+      color: @text-color;
+      border-color: fade(@text-color, 50%);
     }
 
     .title {

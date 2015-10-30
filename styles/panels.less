@@ -86,6 +86,24 @@ atom-panel,
 
 .settings-view {
 
+  atom-text-editor[mini],
+  atom-text-editor[mini]::shadow {
+    background: fade(@app-background-color, 50%);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+
+    &.is-focused {
+      background: fade(@app-background-color, 50%);
+    }
+  }
+
+  div > section.section.settings-panel {
+    border-top: 3px solid @app-background-color;
+  }
+
+  div > form.general-panel + .settings-panel {
+    border: 0;
+  }
+
   .config-menu {
     background: transparent;
     border-right: 1px solid fade(@app-background-color, 50%);
@@ -106,11 +124,30 @@ atom-panel,
     }
   }
 
+  select.form-control {
+    height: 24px;
+    padding: 0 9px;
+    line-height: 24px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+    background: fade(@app-background-color, 25%);
+    transition: none;
+
+    &:hover,
+    &:focus {
+      background: fade(@app-background-color, 50%);
+      box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
   .section,
+  .section:first-child,
   .section:last-child,
   // .sub-section,
   .settings-panel,
   .settings-view,
+  .packages,
   {
     border-top: 3px solid @app-background-color;
     padding: 18px 18px 15px 18px;
@@ -119,8 +156,13 @@ atom-panel,
       border-top: 0;
     }
 
-    .settings-container,
-    .package-container {}
+    .package-container {
+      div:last-of-type {
+        .package-card {
+          margin-bottom: 0;
+        }
+      }
+    }
 
     .package-card {
       padding: 12px 18px;
@@ -140,7 +182,7 @@ atom-panel,
 
     .package-detail-view {
       .link {
-        margin: 0 0 6px 18px;
+        margin: 18px 0 6px 18px;
         color: @color-link;
       }
 

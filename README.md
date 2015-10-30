@@ -1,1 +1,2 @@
-# Maximal UI theme (to be combined with minimal-syntax)
+# Maximal UI theme
+to be combined with minimal-syntax
