@@ -58,6 +58,10 @@ atom-panel,
         &:hover {
           color: @color-fg;
         }
+
+        &.package-updates-status-view {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -159,6 +163,7 @@ atom-panel,
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
     background: fade(@app-background-color, 25%);
     transition: none;
+    // -webkit-appearance: none;
 
     &:hover,
     &:focus {

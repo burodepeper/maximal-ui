@@ -18,11 +18,22 @@
 		text-overflow: ellipsis;
 	}
 
-	.directory:not(.status-ignored) {
-		.list-item {
-			&.header {
-				.name {
-					font-weight:bold;
+	.directory {
+
+		&.project-root {
+			&:not(:first-child) {
+				margin-top: 12px;
+				padding-top: 12px;
+				border-top: 3px solid darken(@app-background-color, 10%);
+			}
+		}
+
+		&:not(.status-ignored) {
+			.list-item {
+				&.header {
+					.name {
+						font-weight:bold;
+					}
 				}
 			}
 		}

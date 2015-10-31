@@ -47,7 +47,7 @@
     &.modified:not(:hover) .close-icon {
       // right: 0;
       right: 6px;
-      top: @tab-height/2 - @modified-icon-width/2 + 1px;
+      // top: @tab-height/2 - @modified-icon-width/2 + 1px;
       width: @modified-icon-width;
       height: @modified-icon-width;
       border-color: @text-color;
@@ -103,10 +103,10 @@
   }
 
   .placeholder {
-    width: 2px;
+    width: 3px;
     background: @color-fg;
     height: @tab-height + 6px;
-    margin: @tab-top-padding - 6px 0 0 -1px;
+    margin: @tab-top-padding - 6px 0 0 -2px;
     pointer-events: none;
     &:after {
       display: none;

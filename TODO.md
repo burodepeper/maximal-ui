@@ -21,9 +21,10 @@
 
 # Update existing stuff
 
-- [ ] Settings
-  - [ ] TODO
+- [ ] TODO Settings
+- [ ] TODO Markdown Preview
+- [ ] TODO Linting stuff
 
 # Additional features
 
-- [ ] padding-top and padding-bottom (equal to an empty line) in `editor`
+- [ ] `margin-top` and `margin-bottom` (equal to the line-height set in settings) in [editor.less]. The height of those containers is fixed, so adding a margin pushes the last line out of the pane.
