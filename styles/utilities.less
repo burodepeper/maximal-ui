@@ -14,7 +14,22 @@
   padding: @component-padding / 2;
 }
 
+// .badge {
+//   .text(highlight);
+//   background: @background-color-highlight;
+// }
+
 .badge {
-  .text(highlight);
-  background: @background-color-highlight;
+  background: @app-background-color;
+  line-height: inherit;
+  padding: 0 6px;
+  border-radius: 0;
+  font-size: 0.667;
+  min-width: auto;
+
+  &.badge-flexible {
+    padding: 0 6px;
+    font-size: 0.667;
+    min-width: auto;
+  }
 }

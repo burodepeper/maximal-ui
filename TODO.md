@@ -21,9 +21,13 @@
 
 # Update existing stuff
 
-- [ ] TODO Settings
-- [ ] TODO Markdown Preview
-- [ ] TODO Linting stuff
+- [ ] Settings
+- [ ] Markdown Preview
+- [ ] Linting stuff
+- [ ] Search results
+- [ ] Find (and replace); buttons are cut-off at the right
+- [ ] Overlays
+- [ ] Vertically split windows
 
 # Additional features
 
