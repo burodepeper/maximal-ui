@@ -38,14 +38,38 @@ atom-text-editor[mini].is-focused::shadow {
 atom-text-editor:not([mini]) {
   box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
 
+  // border-top: 1.5em solid transparent;
+  // border-bottom: 1.5em solid transparent;
+
   &.is-focused {
     box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.25);
   }
 
   &::shadow {
-    .scroll-view .lines,
-    .gutter-container .line-numbers {
-      margin: 1.5em 0;
-    }
+
+
+    // .scroll-view .lines,
+    // .gutter-container .line-numbers {
+    //   margin: 1.5em 0;
+    // }
+
+    // .scroll-view:before,
+    // // .gutter-container:before
+    // {
+    //   content: '';
+    //   position: relative;
+    //   display: block;
+    //   height: 1.5em; width: 100%;
+    // }
+    //
+    // .scroll-view:after,
+    // // .gutter-container:before
+    // {
+    //   content: '';
+    //   position: relative;
+    //   display: block;
+    //   height: 1.5em; width: 100%;
+    // }
+
   }
 }
