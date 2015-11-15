@@ -4,31 +4,33 @@
 atom-text-editor[mini],
 atom-text-editor[mini]::shadow {
 
-  color: lighten(@text-color, 15%);
+  color: fade(@text-color, 67%);
   padding-left: 9px;
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
 
-  .cursor { border-color: #000; }
-  .selection .region { background-color: rgba(0, 0, 0, .2); }
-  .placeholder-text {
-    color: lighten(@text-color-subtle, 10%);
-  }
+  // .cursor { border-color: #000; }
+  // .selection .region { background-color: rgba(0, 0, 0, .2); }
+  // .placeholder-text {
+  //   color: lighten(@text-color-subtle, 10%);
+  // }
+
 }
 
 atom-text-editor[mini].is-focused,
 atom-text-editor[mini].is-focused::shadow {
 
   color: @text-color;
-  background-color: @input-background-color;
-  border-color: @input-border-color;
+  // background-color: @input-background-color;
+  // border-color: @input-border-color;
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
 
-  .placeholder-text {
-    color: @text-color-subtle;
-  }
-  .selection .region {
-    background-color: lighten(@background-color-info, 30%);
-  }
+  // .placeholder-text {
+  //   color: @text-color-subtle;
+  // }
+  // .selection .region {
+  //   background-color: lighten(@background-color-info, 30%);
+  // }
+
 }
 
 .item-views {
@@ -46,7 +48,6 @@ atom-text-editor:not([mini]) {
   }
 
   &::shadow {
-
 
     // .scroll-view .lines,
     // .gutter-container .line-numbers {
