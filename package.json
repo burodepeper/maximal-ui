@@ -5,7 +5,7 @@
     "email": "david@burodepeper.nl"
   },
   "theme": "ui",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "(work in progress) A light ui-theme for Atom to go with minimal-syntax",
   "repository": "https://github.com/burodepeper/maximal-ui",
   "private": true,
