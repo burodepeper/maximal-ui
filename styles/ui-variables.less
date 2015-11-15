@@ -21,6 +21,7 @@
 @text-color-success:    @color-green;
 @text-color-warning:    @color-yellow;
 @text-color-error:      @color-red;
+@text-color-comment:    @color-orange;
 
 @text-color-ignored:    @text-color-subtle;
 @text-color-added:      darken(@color-green, 10%);
@@ -30,10 +31,17 @@
 
 //
 
+// @background-color-info: #ffffff;
+// @background-color-success: #17ca65;
+// @background-color-warning: #ff4800;
+// @background-color-error: #c00;
+// @background-color-highlight: rgba(0, 0, 0, .1);
+// @background-color-selected: #6aa5e9;
+
 @background-color-info: #ffffff;
 @background-color-success: #17ca65;
-@background-color-warning: #ff4800;
-@background-color-error: #c00;
+@background-color-warning: average(@text-color-comment, @text-color-error);
+@background-color-error: @text-color-error;
 @background-color-highlight: rgba(0, 0, 0, .1);
 @background-color-selected: #6aa5e9;
 

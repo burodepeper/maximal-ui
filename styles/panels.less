@@ -5,6 +5,7 @@
 atom-panel-container {
   &.bottom {
     padding-left: 12px;
+    margin-top: 18px;
   }
 }
 
@@ -17,6 +18,10 @@ atom-panel,
 
   &.bottom {
     margin-right:18px;
+
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
 
   &.top,
@@ -27,11 +32,12 @@ atom-panel,
   }
 
   status-bar {
-    height: 42px;
+    // height: 42px;
+    height: 33px;
 
     .flexbox-repaint-hack {
       left: 6px;
-      top: 12px;
+      top: 0;
       padding: 0;
       height: 24px;
 
@@ -197,6 +203,77 @@ atom-panel,
 
 .packages {
 
+}
+
+// ---------- LINTER ----------
+
+linter-bottom-container {
+  margin-right: 18px;
+
+  linter-bottom-tab {
+    margin: 0 3px 0 0;
+    padding: 0 9px;
+    line-height: 24px;
+    color: fade(@color-fg, 50%);
+    border: 0;
+    background: fade(@color-fg, 10%);
+
+    &.active {
+      background: @color-bg;
+    }
+  }
+}
+
+linter-panel {
+  // margin-top: 18px;
+}
+
+linter-message {
+  line-height: 18px;
+  padding-left: 6px;
+
+  &:not(:last-child) {
+    margin-bottom: 3px;
+  }
+}
+
+#linter-inline {
+  border-radius: 0;
+  box-shadow: 6px 6px 0 fade(@color-fg, 50%);
+  padding: 9px 6px 9px 3px;
+  background: #33333f;
+
+  .linter-highlight {
+    &.badge:not(.warning):not(.error) {
+      background: @app-background-color;
+    }
+  }
+}
+
+.linter-message-item {
+  margin: 0 3px 0 0;
+
+  &:not(.badge) {
+    margin-left: 6px;
+  }
+}
+
+.linter-message-link {
+  margin-left: 6px;
+  color: @color-red;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.linter-highlight {
+  &.badge {
+    border-radius: 0;
+    font-size: 1em;
+    background: fade(@color-fg, 10%);
+  }
 }
 
 // ---------- CLEAN UP ----------
